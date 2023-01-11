@@ -1,0 +1,16 @@
+from math import floor
+spaceship_width = float(input())
+spaceship_length = float(input())
+spaceship_height = float(input())
+average_height_spacemen = float(input())
+
+volume_spaceship = spaceship_width * spaceship_length * spaceship_height
+volume_room = (average_height_spacemen + 0.40) * 2 * 2
+spacemen_count = floor(volume_spaceship / volume_room)
+
+if 3 <= spacemen_count <=10 :
+    print(f"The spacecraft holds {spacemen_count} astronauts." )
+elif spacemen_count <3 :
+    print("The spacecraft is too small.")
+else:
+    print("The spacecraft is too big.")

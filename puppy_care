@@ -1,0 +1,19 @@
+dog_food = int(input())
+command = input()
+
+dog_food *= 1000
+sum_meals = 0
+food_per_meal_gram = 0
+
+while command != "Adopted":
+    food_per_meal_gram = int(command)
+    sum_meals += food_per_meal_gram
+    command = input()
+
+difference = abs(dog_food - sum_meals)
+
+if dog_food >= sum_meals:
+
+    print(f"Food is enough! Leftovers: {difference} grams.")
+else:
+    print(f"Food is not enough. You need {difference} grams more.")

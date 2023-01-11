@@ -1,0 +1,16 @@
+from math import ceil
+
+videocard_price = int(input())
+transition_price = int(input())
+current_per_day = float(input())
+profit_per_day = float(input())
+
+videocard_total_price = videocard_price * 13
+transition_total_price = transition_price * 13
+total_price = videocard_total_price + transition_total_price + 1000
+dayli_profit_videocard = profit_per_day - current_per_day
+total_price_videocard_per_day = dayli_profit_videocard * 13
+days = total_price / total_price_videocard_per_day
+
+print(total_price)
+print(ceil(days))

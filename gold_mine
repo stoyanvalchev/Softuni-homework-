@@ -1,0 +1,16 @@
+# number_locations = int(input())
+#
+# for i in range(number_locations):
+#     average_gold_daily = float(input())
+#     days_per_location = int(input())
+#     sum = 0
+#     for j in range(days_per_location):
+#         real_gold_daily = float(input())
+#         sum += real_gold_daily
+#
+#     average_real_gold_daily = sum / days_per_location
+#     if average_real_gold_daily >= average_gold_daily:
+#         print(f"Good job! Average gold per day: {average_real_gold_daily:.2f}.")
+#     else:
+#         difference = average_gold_daily - average_real_gold_daily
+#         print(f"You need {difference:.2f} gold.")
